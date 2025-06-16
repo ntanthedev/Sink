@@ -18,13 +18,12 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
   },
-
   runtimeConfig: {
     siteToken: 'SinkCool',
     redirectStatusCode: '301',
     linkCacheTtl: 60,
     redirectWithQuery: false,
-    homeURL: '',
+    homeURL: 'https://www.facebook.com/ntannn.dev/',
     cfAccountId: '',
     cfApiToken: '',
     dataset: 'sink',
