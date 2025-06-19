@@ -59,15 +59,20 @@ export default defineNuxtConfig({
     enforceModuleCompatibility: true,
   },
 
-  compatibilityDate: {
-    cloudflare: '2025-05-08',
-  },
+  compatibilityDate: '2025-05-08',
 
   nitro: {
+    preset: 'cloudflare-pages',
     experimental: {
       openAPI: true,
     },
     timing: true,
+    cloudflare: {
+      pages: {
+        compatibilityFlags: ['nodejs_compat'],
+        compatibilityDate: '2025-05-08'
+      }
+    },
     openAPI: {
       production: 'runtime',
       meta: {
